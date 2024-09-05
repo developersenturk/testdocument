@@ -1,0 +1,5 @@
+# RS Nesneleri
+
+Bilindiği üzere Always® veritabanı ile çalışmakta olan client-server bir geliştirme ortamıdır. Uygulamalarındaki en temel gerçek üzerinde işlem yaptığı verileri, bir veritabanı yardımıyla organize etmesidir. Fakat bu organizasyonda bir arayüz olarak çalışmakta ve veriye ait sadece presentation logic kısmından sorumlu olan bir yapıya sahiptir. Sonuçta verinin bir şekilde veritabanından kullanıcı karşısına taşınması da gerekmektedir. Bu işlem ise veritabanı ile Always® arasındaki kurulan haberleşme sayesinde başarılmaktadır.
+
+Always® ile veritabanı arasındaki bilgi akışını sağlayan özel nesneler bulunmaktadır. RS(RecordSet) nesneleri şeklinde adlandırılan bu nesneler veritabanı ile kullanıcı arasında bilgi taşımaktadır. RS nesneleri ile yapılan işlemler SQL işlemlerine oldukça benzemesi sayesinde kullanımı son derece kolaydır. Bu yüzden geliştirici, eğer ANSI SQL kullanımını biraz biliyorsa, RS nesneleri kullanımında zorluk çekmeyecektir. Normal SQL işletim şekilleri yanında RS nesnelerinin veritabanına yönelik; bazı özel işlemleri de gerçekleştirebilmektedirler. Bunlara örnek olarak transaction kullanımına yönelik özel işlemleri verebiliriz.

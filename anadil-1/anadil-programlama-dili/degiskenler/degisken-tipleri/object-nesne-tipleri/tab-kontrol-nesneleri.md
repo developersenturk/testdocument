@@ -1,0 +1,3 @@
+# TAB Kontrol Nesneleri
+
+Form nesneleri dahilinde yer almakta olan TAB kontrol nesnesi, özellikle çok detaylı bilgiler içeren form çalışmalarında yerden kazandırmakta olan bir nesnedir. Bünyesinde içerdiği sayfalar ile küçük bir alanda kullanıcıya organize edilmiş halde çok çeşitli bilgiler sunabilmektedir. TAB sayfalama sistemini gerçekleştirmekte olan bu nesne, her TAB sayfasının ayrı ayrı Imagine® altında geliştirilmesine ihtiyaç duymaktadır. Her TAB sayfasına karşılık gelen TAB formları üzerindeki kontrol nesneleri, TAB kontrol nesnesinin yer aldığı anaform'dan itibaren "form TAB TABform kontrol" yolu yardımıyla ulaşılabilmektedir.

@@ -1,0 +1,2 @@
+# Şifreleme Fonksiyonları
+

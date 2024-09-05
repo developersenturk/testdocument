@@ -1,0 +1,6 @@
+---
+icon: screwdriver-wrench
+---
+
+# Özellikler
+

@@ -1,0 +1,2 @@
+# Anadil Genel Fonksiyonları
+

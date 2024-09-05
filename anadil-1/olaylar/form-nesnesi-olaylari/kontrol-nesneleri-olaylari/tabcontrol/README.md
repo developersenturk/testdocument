@@ -1,0 +1,6 @@
+---
+icon: bolt-lightning
+---
+
+# TabControl
+

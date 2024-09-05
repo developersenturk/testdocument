@@ -1,0 +1,2 @@
+# Diğer Operatörler
+

@@ -1,0 +1,3 @@
+# Servis\_Call Nesneleri
+
+Servisler Always® executable uygulamaları arasında en güçlü olanlarıdır. Servislerin kullanılma amaçlarından biri de herhangi bir uygulamanın üstesinden gelemeyeceği işlemleri onlar adına başarabilmeleridir. Bu işlem ise herhangi bir uygulamanın taleb ettiği özel görevin, o uygulama adına servis tarafından yürütülmesi olarak uygulanabilmektedir. Bu tür uygulamaya örnek olarak bir belge nesnesinin Servis\_Call nesnesine uzaktan çağırmak suretiyle onun verdiği hizmetten yararlanmasını verebiliriz. Servis\_Call nesnelerinin parametreleri sayesinde iki uygulama veri alış-verişinde de bulunabilmektedir.

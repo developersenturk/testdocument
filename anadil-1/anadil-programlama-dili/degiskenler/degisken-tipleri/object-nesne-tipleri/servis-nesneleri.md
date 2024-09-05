@@ -1,0 +1,9 @@
+# Servis Nesneleri
+
+Servisler Always® platformunun sahip olduğu en güçlü executable kısmı teşkil eden özel nesnelerdir. Bu nesneler de executable olduklarından, Always® ilk girişinde register edilmekte ve gerekli olanları da otomatik olarak çalıştırılmaktadır. Kendi aralarındaki mevcut olan bağımlılıklar sayesinde ortak bir amaca hizmet gayesiyle kullanımları da mümkündür. Servislerin fonksiyonelliği diğer executable olan nesnelere karşı daha fazladır ve diğer executable nesneler arasında köprü vazifesi görebilmektedir. Etkilerinin kendi sınırlarını aşması ve diğer executable nesneler için özel işlemler gerçekleştirebilmeleri de sahip oldukları özellikler arasındadır.
+
+Diğer executable nesnelere göre uygulama sahaları tek bir yönde değildir. Mesela bir modül nesnesinin görevi sadece belge nesneleri içerebilmek olduğu halde, servisler her türlü Always® içindeki uygulamalar içinde veya Always® dışı özel uygulamaları gerçekleştirmek üzere kullanılabilmektedir. Sonuçta servisler Always® uygulama vizyonunu genişletmekte olan kısımlardır. Diğer executable uygulamalarının başaramadığı her türlü işlem de servislerin etki alanında yer almaktadır.
+
+Servislerin, Always® altında özel bir kontrol penceresi bulunmakta olup, aktif hale geçirilmeleri veya durdurulmaları buradan yapılmaktadır. Ayrıca servislere ilişkin durum bilgisi de bu pencereden öğrenilebilmektedir.
+
+Servislerin başka bir özel kullanımı da, Always® altındaki belgelerin veritabanında yerleşimini göstermekte olan Browser uygulamasıdır. Bu uygulama hiyerarşik olarak belge düzenini göstermekte, kullanıcının isteği ile de hızlı bilgi alınmasına yönelik veritabanından belge getirilmesi işlemi drag-drop bir şekilde yapılabilmektedir. Bunun yanında arama işlemlerinde de kullanılabilen Browser, oldukça kolay arabirimi ile kullanıcının en çok işine yarayan belge kontrol aracı olmaktadır.

@@ -1,0 +1,2 @@
+# Mantıksal Operatörler
+

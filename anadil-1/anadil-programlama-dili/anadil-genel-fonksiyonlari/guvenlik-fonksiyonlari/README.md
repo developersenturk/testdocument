@@ -1,0 +1,2 @@
+# Güvenlik Fonksiyonları
+

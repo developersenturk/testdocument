@@ -1,0 +1,26 @@
+# Object
+
+Anadil® programlama dili, tamamen nesne tabanlı kullanılmakta olan Always® geliştirme ortamını kullanıcısına sunmaktadır. Ortaya konulan uygulamalar tamamen nesneler üzerinde işlemekte olduğundan, Anadil® kullanacak olan geliştiricinin nesne kavramını çok iyi anlaması gerekmektedir. Nesnelerin kapsamı dışındaki çok az işlem de bazı özel fonksiyonlar tarafından gerçekleştirilmektedir.
+
+Genel anlamda nesneler, kavramsal olarak günlük hayatta karşılaştığımız, belli bir işlemi gerçekleştirmekte olan varlıklara karşılık gelmektedir. Mesela bir bardak, masa, kapı, disket, mouse, monitör birer nesnedirler. Bunlar önceden belirlenmiş olan bazı özel işlemleri gerçekleştirmektedirler.
+
+Programlama dili açısından ise nesneler özel sistemlere karşılık gelmekte olan kapalı kutulardır. Bu kapalı kutular sistemdirler çünkü IPO şeklinde input-process-output olarak işleyişleri vardır. Nesnelerin internal işleyişleri tamamen kullanıcılarından soyutlanmıştır. Bu yüzden nesnenin kullanıcısı, asıl gerçekleştirmek istediği işlem üzerinde yoğunlaşmaktadır.
+
+Nesneler gerçekleştirmekte oldukları işlemleri bünyelerinde barındırdıkları 2 temel parçaları sayesinde başarmaktadırlar. Bunlar METOD ve PROPERTY olarak adlandırılmakta olan kısımlardır. Metodlar, bir nesnenin işlevlerini gerçekleştirmekte olduğu, nesne kullanıcısına gerçek anlamdaki hizmeti verirler. Property'ler ise bilgi tutan nesne kısımlarıdır. Bu bilgiler nesne işevlerini gerçekleştirirken input etkisinde olabilir veya belli işlemlerin sonuç bilgilerini sunmakta olabilir. Sonuçta nesnenin kendisine göre değişmekte olan metod-property uygulamaları söz konusudur.
+
+Nesnelerin Always® altında bağımsız parçalarıdır. Aktif hale geçirilmeleri özel mekanizmalar sayesinde gerçekleşmektedir. Nesneleri aktive etmekte olan bu sistemler ise EVENT adı ile adlandırılmaktadır. Event'ler Always® tarafından, nesnelere işlerlik kazandırmak için kullanılan yapılardır.
+
+Anadil® 'in Event-driven yapısı, sahip olduğu nesnelerin yazılan event kodları sayesinde işletiminden kaynaklanmaktadır. Event işletimi normal yapısal dillerde olduğu gibi sırayla değil, event oluşumu anında çalışması şeklindedir. Bu yüzden de Anadil® ile geliştirilen kodlar yukardan aşağıya düz bir sırada değil, event oluşum sırasıyla çalışmaktadır.
+
+Gerçek geliştirme ortamında ise event-driven yazım ile birlikte bağımsız fonksiyon uygulamaları da bulunmaktadır. Bunlar önceden kütüphane fonksiyonları olabildiği gibi; geliştiricinin bazı özel işlemleri gerçekleştirmek için yazdığı grup halindeki kodlar da olabilmektedir. Ama; sonuçta Always® event-driven olarak çalışacak, geliştirici ise bu event-kodlarından, kendi yazdığı fonksiyonları çağırma şeklinde işlemlerini gerçekleştirecektir.\
+Önceden yapısal olarak fonksiyonları belirlenmiş olan nesnelerin kullanılabilmeleri için instantiate edilmeleri başka bir deyişle nesnenin dahil olduğu sistemden taleb edilmesi gerekmektedir. Anadil® altında bu işlem "Dim" yardımcı kelimesi kullanılarak nesne tipinde bir değişken tanımlanması ile gerçekleştirilmektedir.
+
+Anadil® altında birçok nesne türü bulunmasına karşılık, bunların hepsi de tek bir referans ismi ile "Object/Nesne" altında kullanılabilmektedir. Fakat bu kullanım esnasında bir nesne sadece bir nesne türü olarak uygulanmakta, önceden kullanılmış olan nesne türünden başka bir türe geçiş olmamaktadır. Mesela bir nesne; RS nesnesi şeklinde uygulamada kullanılmış ise daha sonradan bu nesnenin başka bir tür nesne olarak mesela CFF nesnesi olarak kullanılamaz. Sonuçta RS nesnesi metod ve property uygulamaları bu nesne üzerinde kullanılmasından sonra Always®'e göre bu nesne sadece RS nesnesidir.
+
+Nesnelerin bu şekilde aynı isim altında toplanmaları, geliştiriciye sadece arayüz kolaylığı sağlamak amacına yöneliktir. Bu şekilde bir çok nesne türünün ayrı ayrı referans isimlerinin akılda tutulması gerekmemektedir.
+
+Nesnelerin kullanımının sona ermesinden sonra mutlaka yokedilmeleri başka bir deyişle nesnenin kullanmış olduğu kaynakların sisteme geri kazandırılması gerekmektedir. Bu işlem ise her nesnenin sahip olduğu "Close()" metodu yardımıyla gerçekleştirilmektedir. Normal olarak Always® de kullanılan nesnelerin kaynak dönüşümünü, işlem bittiğini anladığında gerçekleştirmektedir; fakat geliştiricinin bu işlemi kendi yapması daha sağlıklıdır. Bu yüzden geliştirici olarak "Close()" metodunu lütfen nesneler ile işlem bittiğinde kullanınız.
+
+"Close" metodunun gereksiz kullanımları da Always® tarafından önlenmektedir. Örneğin herhangi bir belge ile çalışırken, geliştiricinin herhangi bir event dahilinde, belgenin sahip olduğu form nesnesini veya parametre ile gelen CFF nesnesini, "Close" metodu ile ortadan kaldırması mümkün değildir. Bu tür bir durumda uyarı mesajı da Always® tarafından ayrıca verilmektedir.
+
+Parametre şeklinde event kodları arasında geçirilebilen nesneler ayrıca global olarak da tanımlanabilmekte, tek bir amaca hizmet eden nesnelerin, mesela form nesnelerinin, en uygun kullanımı sağlanabilmektedir. Bunların yanında ayrıca bazı nesnelerin sahip olduğu "GlobalControlID" property uygulanması suretiyle, nesnenin dahil olduğu işletilebilir uygulama sınırları dışında da görülebilir ve üzerinde işlem yapılabilir olması, sağlanan nesne kullanım kolaylıkları arasında yer almaktadır.
